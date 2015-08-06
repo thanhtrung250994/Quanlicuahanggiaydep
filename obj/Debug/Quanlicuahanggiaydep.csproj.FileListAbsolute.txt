@@ -1,0 +1,10 @@
+E:\c0d3\Visual2013\c#\Quanlicuahanggiaydep\bin\Debug\Quanlicuahanggiaydep.exe.config
+E:\c0d3\Visual2013\c#\Quanlicuahanggiaydep\bin\Debug\Quanlicuahanggiaydep.exe
+E:\c0d3\Visual2013\c#\Quanlicuahanggiaydep\bin\Debug\Quanlicuahanggiaydep.pdb
+E:\c0d3\Visual2013\c#\Quanlicuahanggiaydep\obj\Debug\Quanlicuahanggiaydep.Properties.Resources.resources
+E:\c0d3\Visual2013\c#\Quanlicuahanggiaydep\obj\Debug\Quanlicuahanggiaydep.csproj.GenerateResource.Cache
+E:\c0d3\Visual2013\c#\Quanlicuahanggiaydep\obj\Debug\Quanlicuahanggiaydep.exe
+E:\c0d3\Visual2013\c#\Quanlicuahanggiaydep\obj\Debug\Quanlicuahanggiaydep.pdb
+E:\c0d3\Visual2013\c#\Quanlicuahanggiaydep\bin\Debug\Quan_ly_ban_hang_giay_dep.accdb
+E:\c0d3\Visual2013\c#\Quanlicuahanggiaydep\obj\Debug\Quanlicuahanggiaydep.Main_form.resources
+E:\c0d3\Visual2013\c#\Quanlicuahanggiaydep\obj\Debug\Quanlicuahanggiaydep.login.resources
