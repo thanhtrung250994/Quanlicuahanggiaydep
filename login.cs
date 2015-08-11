@@ -69,7 +69,8 @@ namespace Quanlicuahanggiaydep
 
         private void login_FormClosing(object sender, FormClosingEventArgs e)
         {
-            e.Cancel = false;
+            //e.Cancel = false;
+            Application.Exit();
         }
     }
 }

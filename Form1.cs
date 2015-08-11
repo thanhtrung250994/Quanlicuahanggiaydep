@@ -379,7 +379,32 @@ namespace Quanlicuahanggiaydep
                     command.ExecuteNonQuery();
                 }
                 con.Close();
-                dataGridView_banhang.Rows.Clear();
+                con.Open();
+                try
+                {
+                    OleDbDataReader reader;
+                    for (i = 0; i <= dataGridView_banhang.RowCount - 2; i++)
+                    {
+                        command.CommandText = @"select * from thong_tin_sp where Ma_sp = '" + dataGridView_banhang.Rows[i].Cells[1].Value.ToString() + "'";
+                        reader = command.ExecuteReader();
+                        while (reader.Read())
+                        {
+                            int a = int.Parse(dataGridView_banhang.Rows[i].Cells[3].Value.ToString());
+                            int b = reader.GetInt32(2) - a;
+                            command.CommandText = @"UPDATE thong_tin_sp SET So_luong =" + b + " where Ma_sp='" + dataGridView_banhang.Rows[i].Cells[1].Value.ToString() + "'";
+                            reader.Close();
+                            command.ExecuteNonQuery();
+                            break;
+                        }
+                        reader.Close();
+                    }
+                }
+                catch(Exception gg)
+                {
+                    MessageBox.Show(gg.ToString());
+                }
+                con.Close();
+                    dataGridView_banhang.Rows.Clear();
                 tb_ql_banhang_tenkhachhang.Text = "";
             }
             if (tb_ql_banhang_tenkhachhang.Text != "" && dataGridView_banhang.RowCount > 2 && tb_ql_banhang_tenkhachhang.Text != MKH)
@@ -612,7 +637,8 @@ namespace Quanlicuahanggiaydep
 
         private void Main_form_FormClosing(object sender, FormClosingEventArgs e)
         {
-            e.Cancel = false;
+            //e.Cancel = false;
+            Application.Exit();
         }
 
         private void bt_logout_Click(object sender, EventArgs e)
@@ -651,6 +677,8 @@ namespace Quanlicuahanggiaydep
             gb_delete.Visible = true;
             gb_them.Visible = true;
             panel6.Visible = true;
+            btn_ql_nhanvien_edit.Enabled = false;
+            btn_ql_nv.Enabled = false;
         }
 
         private void bt_ql_nhanvien_editcomplete_Click(object sender, EventArgs e)
@@ -658,6 +686,8 @@ namespace Quanlicuahanggiaydep
             gb_delete.Visible = false;
             gb_them.Visible = false;
             panel6.Visible = false;
+            btn_ql_nhanvien_edit.Enabled = true;
+            btn_ql_nv.Enabled = true;
         }
 
         private void bt_ql_nhanvien_edit_them_Click(object sender, EventArgs e)
@@ -746,6 +776,9 @@ namespace Quanlicuahanggiaydep
                     command.Parameters.AddWithValue("@giaban", Int32.Parse(tb_ql_sp_edit_gia.Text) * 1.1);
 
                     command.ExecuteNonQuery();
+                    //cb_ql_banhang_masanpham.DataSource = tb_ql_sp_edit_maps.Text;
+                    //list_ma_sp.Add(tb_ql_sp_edit_maps.Text);
+                    //cb_ql_banhang_masanpham.DataSource = list_ma_sp;
                     tb_ql_sp_edit_maps.Text = "";
                     tb_ql_sp_edit_ngaynhap.Text = "";
                     tb_ql_sp_edit_soluong.Text = "";
@@ -754,6 +787,7 @@ namespace Quanlicuahanggiaydep
                     tb_ql_sp_edit_hangsx.Text = "";
                     tb_ql_sp_edit_gia.Text = "";
                     MessageBox.Show("Thao tác thành công!");
+                    
                 }
                 catch (Exception es)
                 {
