@@ -8,3 +8,4 @@ E:\c0d3\Visual2013\c#\Quanlicuahanggiaydep\obj\Debug\Quanlicuahanggiaydep.pdb
 E:\c0d3\Visual2013\c#\Quanlicuahanggiaydep\bin\Debug\Quan_ly_ban_hang_giay_dep.accdb
 E:\c0d3\Visual2013\c#\Quanlicuahanggiaydep\obj\Debug\Quanlicuahanggiaydep.Main_form.resources
 E:\c0d3\Visual2013\c#\Quanlicuahanggiaydep\obj\Debug\Quanlicuahanggiaydep.login.resources
+E:\c0d3\Visual2013\c#\Quanlicuahanggiaydep\obj\Debug\Quanlicuahanggiaydep.csprojResolveAssemblyReference.cache

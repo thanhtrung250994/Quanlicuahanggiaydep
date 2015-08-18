@@ -5,16 +5,40 @@ VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quanlicuahanggiaydep", "Quanlicuahanggiaydep.csproj", "{EC3B295A-74E4-4A51-BF4B-3972A648DBD6}"
 EndProject
+Project("{6141683F-8A12-4E36-9623-2EB02B2C2303}") = "Setup_qlbh", "C:\Users\asusx202\Desktop\Setup_qlbh\Setup_qlbh.isproj", "{D1B76A55-C613-4039-9AAB-493345DBFCA0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{EC3B295A-74E4-4A51-BF4B-3972A648DBD6} = {EC3B295A-74E4-4A51-BF4B-3972A648DBD6}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		CD_ROM|Any CPU = CD_ROM|Any CPU
 		Debug|Any CPU = Debug|Any CPU
+		DVD-5|Any CPU = DVD-5|Any CPU
 		Release|Any CPU = Release|Any CPU
+		SingleImage|Any CPU = SingleImage|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC3B295A-74E4-4A51-BF4B-3972A648DBD6}.CD_ROM|Any CPU.ActiveCfg = Release|Any CPU
+		{EC3B295A-74E4-4A51-BF4B-3972A648DBD6}.CD_ROM|Any CPU.Build.0 = Release|Any CPU
 		{EC3B295A-74E4-4A51-BF4B-3972A648DBD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EC3B295A-74E4-4A51-BF4B-3972A648DBD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC3B295A-74E4-4A51-BF4B-3972A648DBD6}.DVD-5|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC3B295A-74E4-4A51-BF4B-3972A648DBD6}.DVD-5|Any CPU.Build.0 = Debug|Any CPU
 		{EC3B295A-74E4-4A51-BF4B-3972A648DBD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EC3B295A-74E4-4A51-BF4B-3972A648DBD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC3B295A-74E4-4A51-BF4B-3972A648DBD6}.SingleImage|Any CPU.ActiveCfg = Release|Any CPU
+		{EC3B295A-74E4-4A51-BF4B-3972A648DBD6}.SingleImage|Any CPU.Build.0 = Release|Any CPU
+		{D1B76A55-C613-4039-9AAB-493345DBFCA0}.CD_ROM|Any CPU.ActiveCfg = CD_ROM
+		{D1B76A55-C613-4039-9AAB-493345DBFCA0}.CD_ROM|Any CPU.Build.0 = CD_ROM
+		{D1B76A55-C613-4039-9AAB-493345DBFCA0}.Debug|Any CPU.ActiveCfg = DVD-5
+		{D1B76A55-C613-4039-9AAB-493345DBFCA0}.Debug|Any CPU.Build.0 = DVD-5
+		{D1B76A55-C613-4039-9AAB-493345DBFCA0}.DVD-5|Any CPU.ActiveCfg = DVD-5
+		{D1B76A55-C613-4039-9AAB-493345DBFCA0}.DVD-5|Any CPU.Build.0 = DVD-5
+		{D1B76A55-C613-4039-9AAB-493345DBFCA0}.Release|Any CPU.ActiveCfg = SingleImage
+		{D1B76A55-C613-4039-9AAB-493345DBFCA0}.Release|Any CPU.Build.0 = SingleImage
+		{D1B76A55-C613-4039-9AAB-493345DBFCA0}.SingleImage|Any CPU.ActiveCfg = SingleImage
+		{D1B76A55-C613-4039-9AAB-493345DBFCA0}.SingleImage|Any CPU.Build.0 = SingleImage
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

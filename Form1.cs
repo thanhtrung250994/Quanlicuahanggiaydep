@@ -29,6 +29,11 @@ namespace Quanlicuahanggiaydep
         public Dictionary<string, Int32> dictionary_sp = new Dictionary<string, Int32>();
 
 
+
+
+        public Dictionary<string, sanpham> dictionary_sanpham = new Dictionary<string, sanpham>();
+
+
         public Dictionary<string, Int32> dictionary_sp_banchay = new Dictionary<string, int>();
         /// <summary>
         /// Đối tượng kết nối tới cớ sở dữ liệu
@@ -78,8 +83,13 @@ namespace Quanlicuahanggiaydep
                 command.Connection = con;
                 command.CommandText = "select * from thong_tin_sp";
                 OleDbDataReader reader = command.ExecuteReader();
+                sanpham sp1;
                 while (reader.Read())
                 {
+                    sp1 = new sanpham();
+                    sp1.gia = reader.GetInt32(6);
+                    sp1.soluong = reader.GetInt32(2);
+                    dictionary_sanpham.Add(reader.GetString(0), sp1);
                     list_ma_sp.Add(reader.GetString(0));
                     dictionary_sp.Add(reader.GetString(0), reader.GetInt32(6));
                 }

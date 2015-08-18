@@ -1,0 +1,11 @@
+E:\c0d3\Visual2013\c#\Quanlicuahanggiaydep\bin\Release\Quanlicuahanggiaydep.exe.config
+E:\c0d3\Visual2013\c#\Quanlicuahanggiaydep\bin\Release\Quan_ly_ban_hang_giay_dep.accdb
+E:\c0d3\Visual2013\c#\Quanlicuahanggiaydep\bin\Release\Quanlicuahanggiaydep.exe
+E:\c0d3\Visual2013\c#\Quanlicuahanggiaydep\bin\Release\Quanlicuahanggiaydep.pdb
+E:\c0d3\Visual2013\c#\Quanlicuahanggiaydep\obj\Release\Quanlicuahanggiaydep.Main_form.resources
+E:\c0d3\Visual2013\c#\Quanlicuahanggiaydep\obj\Release\Quanlicuahanggiaydep.login.resources
+E:\c0d3\Visual2013\c#\Quanlicuahanggiaydep\obj\Release\Quanlicuahanggiaydep.Properties.Resources.resources
+E:\c0d3\Visual2013\c#\Quanlicuahanggiaydep\obj\Release\Quanlicuahanggiaydep.csproj.GenerateResource.Cache
+E:\c0d3\Visual2013\c#\Quanlicuahanggiaydep\obj\Release\Quanlicuahanggiaydep.exe
+E:\c0d3\Visual2013\c#\Quanlicuahanggiaydep\obj\Release\Quanlicuahanggiaydep.pdb
+E:\c0d3\Visual2013\c#\Quanlicuahanggiaydep\obj\Release\Quanlicuahanggiaydep.csprojResolveAssemblyReference.cache
